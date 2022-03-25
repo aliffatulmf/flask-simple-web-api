@@ -4,6 +4,8 @@ from lib import parallel, validation
 
 app = Flask(__name__)
 
+app.config["JSONIFY_PRETTYPRINT_REGULAR"] = True
+
 
 @app.route("/", methods=["GET"])
 def hello():
